@@ -40,13 +40,14 @@
             <button onclick="removeCert()">Hapus Sertifikasi</button>
         </div>
     </div>
+
     
     <div id="cv">
         <h2 contenteditable="true">NAMA PELAMAR</h2>
-        <div contenteditable="true" class="credentials">
-            <p>Nomor HP</p> |
-            <a href="">email</a> |
-            <a href="">linkedin profile</a>
+        <div class="credentials">
+            <p contenteditable="true">Nomor HP</p> |
+            <a contenteditable="true" href="">email</a> |
+            <a contenteditable="true" href="">linkedin profile</a>
         </div>
         <div contenteditable="true" class="domicile">
             <p>Domisili</p>
@@ -59,13 +60,13 @@
         <hr>
         <div class="container">
             <div class="education">
-                <div contenteditable="true" class="head-edu">
-                    <b>Nama sekolah/Universitas</b>
-                    <b>Tahun Masuk - Lulus</b>
+                <div  class="head-edu">
+                    <b contenteditable="true">Nama sekolah/Universitas</b>
+                    <b contenteditable="true">Tahun Masuk - Lulus</b>
                 </div>
-                <div contenteditable="true" class="majoring">
-                    <p>Jurusan</p>
-                    <b>Nilai/IPK</b>
+                <div  class="majoring">
+                    <p contenteditable="true">Jurusan</p>
+                    <b contenteditable="true">Nilai/IPK</b>
                 </div>
             </div>
         </div>
@@ -73,38 +74,44 @@
 
         <h3>PENGALAMAN KERJA</h3>
         <hr>
-        <div contenteditable="true" class="container-exp">
+        <div class="container-exp">
             <div class="exp">
                 <div class="head-exp">
-                    <b>Nama Instansi</b>
-                    <b>Tahun Masuk - Keluar</b>
+                    <b contenteditable="true">Nama Instansi</b>
+                    <b contenteditable="true">Tahun Masuk - Keluar</b>
                 </div>
-                <p>Jabatan/Posisi</p>
-                <li>Uraian Pekerjaan</li>
+                <p contenteditable="true">Jabatan/Posisi</p>
+                <div class="uraiankerja" contenteditable="true">
+                    <li>Uraian Pekerjaan</li>
+                </div>
+              
             </div>
         </div>
 
         <h3>KEAHLIAN</h3>
         <hr>
-        <div contenteditable="true" class="skill">
-            <li>Uraian Kemampuan</li>
+        <div  class="skill">
+            <li contenteditable="true">Uraian Kemampuan</li>
         </div>
 
-        <h3 contenteditable="true">SERTIFIKASI PELATIHAN *jika ada</h3>
-        <hr>
-        <div contenteditable="true" class="container-cert">
+        <h3 class="certif">SERTIFIKASI PELATIHAN</h3>
+        <hr class="certline">
+        <div class="container-cert">
             <div class="cert">
-                <div contenteditable="true" class="head-cert">
-                    <b>Nama Pelatihan - Nomor Sertifikat</b>
-                    <b>Tahun mulai - Selesai</b>
+                <div class="head-cert">
+                    <b contenteditable="true">Nama Pelatihan - Nomor Sertifikat</b>
+                    <b contenteditable="true">Tahun mulai - Selesai</b>
                 </div>
-                <li>Uraian Pelatihan</li>
+                <div contenteditable="true" class="uraianpelatihan">
+                    <li>Uraian Pelatihan</li>
+                </div>
+                
             </div>
            
         </div>
     </div>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+    <script src="html2pdf.min.js"></script>
     <script src="main.js"></script>
 </body>
 
