@@ -22,9 +22,7 @@ let countEdu = 0
 function addEdu(){
     countEdu++
    const container = document.querySelector('.container')
-   const  edu = document.querySelector('.education')
-   const headEdu = document.querySelector('.head-edu')
-   const majoring = document.querySelector('.majoring')
+ 
 
    const newEdu = document.createElement('div')
     newEdu.className = 'education ct'+countEdu
@@ -98,6 +96,7 @@ function addSkill(){
     countSkill++
     const skill = document.querySelector('.skill')
     const newSkill = document.createElement('li')
+    newSkill.className = 'skill ct'+countSkill
     newSkill.textContent = 'Uraian Kemampuan'
     skill.appendChild(newSkill)
 }
@@ -128,4 +127,48 @@ function addCert(){
     newCert.appendChild(t)
 
 
+}
+
+function removeEdu(){
+    
+    const delEdu = document.querySelector('.education.ct'+countEdu)
+   if(countEdu == 0){
+    alert('Tidak bisa dihapus lagi')
+   } else {
+    delEdu.remove()
+   countEdu--
+   }
+}
+
+function removeExp(){
+    
+    const delExp = document.querySelector('.exp.ct'+countExp)
+   if(countExp == 0){
+    alert('Tidak bisa dihapus lagi')
+   } else {
+    delExp.remove()
+   countExp--
+   }
+}
+
+function removeSkill(){
+    
+    const delSkill = document.querySelector('.skill.ct'+countSkill)
+   if(countSkill == 0){
+    alert('Tidak bisa dihapus lagi')
+   } else {
+    delSkill.remove()
+   countSkill--
+   }
+}
+
+function removeCert(){
+    
+    const delCert = document.querySelector('.cert.ct'+countCert)
+   if(countCert == 0){
+    alert('Tidak bisa dihapus lagi')
+   } else {
+    delCert.remove()
+   countCert--
+   }
 }
