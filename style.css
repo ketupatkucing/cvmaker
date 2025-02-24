@@ -1,0 +1,164 @@
+body {
+   /* margin: 0 auto; */
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   gap: 10px;
+   padding-top: 50px;
+}
+.container {
+    width: 100%;
+}
+.container-exp {
+   
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    
+}
+.container-cert{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    /* gap: 10px; */
+}
+
+#cv {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 710px;
+    margin: 0 auto;
+    /* border: double 2px; */
+    padding: 30px;
+    height: 100%;
+    margin-bottom: 200px;
+}
+.cetak {
+    margin: 0 auto;
+    width: 750px;
+    /* border: solid; */
+    text-align: center;
+   
+}
+button {
+    background-color: transparent;
+    border: none;
+}
+.button {
+    font-weight: bold;
+    color: white;
+    min-width: 40px;
+    border-radius: 5px;
+    /* margin: 10px; */
+    border: none;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    /* text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2); */
+    text-align: center;
+}
+.button:hover, button:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+.button:active, button:active {
+    cursor: pointer;
+    transform: scale(1);
+}
+.default {
+    background-color: #ffffeb;
+    outline: solid 2px saddlebrown;
+    border-bottom: 3px solid rgba(0, 0, 0, 0.15);
+    color: #fff;
+    border-top: 1px solid rgba(255, 255, 255, 0.15);
+}
+.confirm {
+    background-color: #aad335;
+    outline: solid 2px #41840f;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.15);
+    color: #fff;
+    border-top: 1px solid rgba(255, 255, 255, 0.15);
+}
+.add-edu button, .add-exp button, .add-skill button, .add-cert button, .cetak button {
+    width: 180px;
+    padding: 10px;
+}
+.util {
+    position: relative;
+    top: 0px;
+    margin: 0 auto;
+    width: 750px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+hr {
+    width: 100%;
+    border: solid black 0.5px;
+    margin-bottom: -10px;
+}
+h3 {
+    align-self: flex-start;
+    margin-bottom: -5px;
+}
+.credentials {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: -25px;
+    margin-top: -30px;
+}
+.bio {
+    align-self: flex-start;
+    margin-bottom: -15px;
+    margin-top: -15px;
+}
+.exp, .cert {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.education {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+.majoring {
+    display: flex;
+    gap: 10px;
+    
+}
+.majoring p {
+    margin: 0;
+}
+.head-edu, .head-exp {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: -20px;
+    padding-top: 15px;
+}
+.exp li {
+    margin-top: -20px;
+}
+.skill {
+    align-self: flex-start;
+    
+}
+.skill {
+    padding-top: 15px;
+}
+.head-cert {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 15px;
+}
+.cert li {
+    margin-top: -5px;
+}

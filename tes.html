@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>CV ATS</title>
+</head>
+
+<body>
+    <div class="button cetak default">
+        <button onclick="cetak()">CETAK PDF</button>
+    </div>
+    <div class="util">
+        <div class="confirm button add-edu">
+            <button onclick="addEdu()">Tambah Pendidikan</button>
+        </div>
+        <div class="confirm button add-exp">
+            <button onclick="addExp()">Tambah Pengalaman</button>
+        </div>
+        <div class="confirm button add-skill">
+            <button onclick="addSkill()">Tambah Kemampuan</button>
+        </div>
+        <div class="confirm button add-cert">
+            <button onclick="addCert()">Tambah Sertifikasi</button>
+        </div>
+    </div>
+    
+    <div id="cv">
+        <h2 contenteditable="true">NAMA PELAMAR</h2>
+        <div contenteditable="true" class="credentials">
+            <p>Nomor HP</p> |
+            <a href="">email</a> |
+            <a href="">linkedin profile</a>
+        </div>
+        <div contenteditable="true" class="domicile">
+            <p>Domisili</p>
+        </div>
+        <div contenteditable="true" class="bio">
+            <p>Pengenalan singkat</p>
+        </div>
+
+        <h3>PENDIDIKAN</h3>
+        <hr>
+        <div class="container">
+            <div class="education">
+                <div contenteditable="true" class="head-edu">
+                    <b>Nama sekolah/Universitas</b>
+                    <b>Tahun Masuk - Lulus</b>
+                </div>
+                <div contenteditable="true" class="majoring">
+                    <p>Jurusan</p>
+                    <b>Nilai/IPK</b>
+                </div>
+            </div>
+        </div>
+
+
+        <h3>PENGALAMAN KERJA</h3>
+        <hr>
+        <div contenteditable="true" class="container-exp">
+            <div class="exp">
+                <div class="head-exp">
+                    <b>Nama Instansi</b>
+                    <b>Tahun Masuk - Keluar</b>
+                </div>
+                <p>Jabatan/Posisi</p>
+                <li>Uraian Pekerjaan</li>
+            </div>
+        </div>
+
+        <h3>KEAHLIAN</h3>
+        <hr>
+        <div contenteditable="true" class="skill">
+            <li>Uraian Kemampuan</li>
+        </div>
+
+        <h3 contenteditable="true">SERTIFIKASI PELATIHAN *jika ada</h3>
+        <hr>
+        <div contenteditable="true" class="container-cert">
+            <div class="cert">
+                <div contenteditable="true" class="head-cert">
+                    <b>Nama Pelatihan - Nomor Sertifikat</b>
+                    <b>Tahun mulai - Selesai</b>
+                </div>
+                <li>Uraian Pelatihan</li>
+            </div>
+           
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>
