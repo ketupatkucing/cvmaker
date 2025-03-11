@@ -9,9 +9,8 @@
 </head>
 
 <body>
-    <div class="button cetak default">
-        <button onclick="cetak()">CETAK PDF</button>
-    </div>
+    <button class="button cetak default" onclick="cetak()">CETAK PDF</button>
+    
     <div class="util">
         <div class="confirm button add-edu">
             <button onclick="addEdu()">Tambah Pendidikan</button>
@@ -24,6 +23,9 @@
         </div>
         <div class="confirm button add-cert">
             <button onclick="addCert()">Tambah Sertifikasi</button>
+        </div>
+        <div class="confirm button add-org">
+          <button onclick="addOrg()">Tambah Organisasi</button>
         </div>
     </div>
     <div class="util">
@@ -38,6 +40,9 @@
         </div>
         <div class="default button add-cert">
             <button onclick="removeCert()">Hapus Sertifikasi</button>
+        </div>
+        <div class="default button add-org">
+          <button onclick="removeOrg()">Hapus Organisasi</button>
         </div>
     </div>
 
@@ -108,6 +113,22 @@
                 
             </div>
            
+        </div>
+        
+        <h3 class="orgs">ORGANISASI</h3>
+        <hr class="orgline">
+        <div class="container-org">
+          <div class="org">
+            <div class="head-org">
+              <b contenteditable="true">Nama Organisasi</b>
+              <b contenteditable="true">Tahun mulai - Selesai</b>
+            </div>
+            <div contenteditable="true" class="uraianorg">
+              <li>Uraian Jobdesc di Organisasi</li>
+            </div>
+        
+          </div>
+        
         </div>
     </div>
 
