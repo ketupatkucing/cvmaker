@@ -175,6 +175,81 @@ function addCert() {
   }
 }
 
+let countOrg = 1;
+
+function addOrg() {
+  if (countOrg == 0) {
+    const cv = document.getElementById("cv");
+    const newOrgTitle = document.createElement("h3");
+    newOrgTitle.className = "orgs";
+    newOrgTitle.textContent = "ORGANISASI";
+    const newHr = document.createElement("hr");
+    newHr.className = "orgline";
+    cv.appendChild(newOrgTitle);
+    cv.appendChild(newHr);
+    const newOrgContainer = document.createElement("div");
+    newOrgContainer.className = "container-org";
+    cv.appendChild(newOrgContainer);
+    const newOrg = document.createElement("div");
+    newOrg.className = "org";
+    newOrgContainer.appendChild(newOrg);
+    const newHeadOrg = document.createElement("div");
+    newHeadOrg.className = "head-org";
+    newOrg.appendChild(newHeadOrg);
+    const a = document.createElement("b");
+    const b = document.createElement("b");
+    a.textContent = "Nama Organisasi";
+    b.textContent = "Tahun mulai - Selesai";
+    a.setAttribute("contenteditable", "true");
+    b.setAttribute("contenteditable", "true");
+    newHeadOrg.appendChild(a);
+    newHeadOrg.appendChild(b);
+
+    const uraianorg = document.createElement('div')
+    uraianorg.className = 'uraianorg'
+    const newliorg = document.createElement("li");
+    newliorg.textContent = "Uraian Jobdesc di Organisasi";
+    uraianorg.setAttribute("contenteditable", "true");
+    newOrg.appendChild(uraianorg)
+    uraianorg.appendChild(newliorg);
+    countOrg++;
+  } else {
+    countOrg++;
+    const containerOrg = document.querySelector(".container-org");
+    const org = document.querySelector(".org");
+
+    const newOrg = document.createElement("div");
+    newOrg.className = "org ct" + countOrg;
+    containerOrg.appendChild(newOrg);
+
+    const newHeadOrg = document.createElement("div");
+    newHeadOrg.className = "head-org ct" + countOrg;
+    newOrg.appendChild(newHeadOrg);
+
+    const x = document.createElement("b");
+    const y = document.createElement("b");
+    const t = document.createElement("li");
+    x.textContent = "Nama Organisasi";
+    y.textContent = "Tahun mulai - Selesai";
+    t.textContent = "Uraian Jobdesc di Organisasi";
+    x.setAttribute("contenteditable", "true");
+    y.setAttribute("contenteditable", "true");
+
+    newHeadOrg.appendChild(x);
+    newHeadOrg.appendChild(y);
+
+    const uraianorg = document.createElement('div')
+    uraianorg.className = 'uraianorg'
+    const newliorg = document.createElement("li");
+    newliorg.textContent = "Uraian Job desc di Organisasi";
+    uraianorg.setAttribute("contenteditable", "true");
+    newOrg.appendChild(uraianorg)
+    uraianorg.appendChild(newliorg);
+  }
+}
+
+
+
 function removeEdu() {
   const delEdu = document.querySelector(".education.ct" + countEdu);
   if (countEdu == 0) {
@@ -225,3 +300,31 @@ function removeCert() {
     countCert--;
   }
 }
+
+function removeOrg() {
+  const delOrg = document.querySelector(".org.ct" + countOrg);
+  const delOrg2 = document.querySelector(".org");
+  const orgLine = document.querySelector(".orgline");
+  const containerOrg = document.querySelector(".orgs");
+  const divorg = document.querySelector(".container-org");
+
+  if (countOrg == 1) {
+    delOrg2.remove();
+    containerOrg.remove();
+    orgLine.remove();
+    divorg.remove();
+    countOrg--;
+  } else if (countOrg == 0) {
+    alert("Tidak bisa dihapus lagi");
+  } else {
+    delOrg.remove();
+    countOrg--;
+  }
+}
+
+
+
+
+
+
+
